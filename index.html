@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philippine Astronomy Forum APOD Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+          <h1>Philippine Astronomy Forum</h1>
+          <button id="darkModeBtn">Dark Mode</button>
+          <button id="changeDateBtn" style="display: none;">Choose Another Date</button>
+        </div>
+        <a href="https://www.facebook.com/groups/204502657575035" target="_blank" class="facebook-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </header>
+  <main>
+    <div id="content" class="content">
+      <div class="oval">
+        <h2>Welcome to PAF's</h2>
+        <h2>Astronomy Picture of the Day (APOD) Viewer</h2>
+        <form id="dateForm">
+          <label for="apodDate">Enter Date:</label>
+          <input type="date" id="apodDate" required>
+          <button type="submit" id="getApodBtn">Get APOD</button>
+        </form>
+      </div>
+      <div id="apodDisplay" style="display: none;">
+        <div id="backgroundImage" class="background"></div>
+        <div id="explanation" class="explanation"></div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
